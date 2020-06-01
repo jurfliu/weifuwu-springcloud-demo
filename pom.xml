@@ -11,6 +11,7 @@
   <modules>
     <module>ms-simple-provider</module>
     <module>ms-simple-consumer</module>
+      <module>ms-eureka-center</module>
   </modules>
 
   <!--spring-boot-starter-parent一定要引，否则子模块无法访问 -->
@@ -37,7 +38,18 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-
+  <!--  引入 springcloud的版本 注意要和springboot版本配套使用 否则@EnableEurekaServer无法引入，https://blog.csdn.net/zhang53141/article/details/83091032-->
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-dependencies</artifactId>
+        <version>Camden.SR1</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
