@@ -3,6 +3,7 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ms-eureka-center" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ms-eureka-provider" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ms-simple-consumer" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ms-simple-provider" charset="UTF-8" />
   </component>

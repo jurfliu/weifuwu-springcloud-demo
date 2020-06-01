@@ -16,5 +16,6 @@ public class EurekaApp
     {
         SpringApplication.run(EurekaApp.class,args);
         System.out.println( "eureka 启动成功了！！！" );
+        //github  jurfliu/123456liu
     }
 }
