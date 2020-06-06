@@ -1,11 +1,13 @@
 server:
   port: 7900
 spring:
+  application:
+      name: ms-test-provider
   jpa:
     generate-ddl: false
     show-sql: true
     hibernate:
-      ddl-auto: update
+      ddl-auto: none
   datasource:
     platform: h2
     schema: classpath:schema.sql

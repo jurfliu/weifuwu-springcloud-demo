@@ -1,5 +1,8 @@
 package com.ljf.weifuwu.springcloud.eureka.provider.controller;
 
+import com.ljf.weifuwu.springcloud.eureka.provider.model.EurekaUser;
+
+import com.ljf.weifuwu.springcloud.eureka.provider.respository.EurekaUserRespository;
 import com.netflix.appinfo.InstanceInfo;
 import com.netflix.discovery.EurekaClient;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -7,6 +10,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -16,6 +20,8 @@ public class UserController {
     private EurekaClient eurekaClient;
     @Autowired
     private DiscoveryClient discoveryClient;
+    @Autowired
+    private EurekaUserRespository userRepository;
     @GetMapping("/eureka-instance")
     public String serviceUrl() {
         //和配置文件配置的application.name=ms-eureka-provider保持一致
@@ -29,5 +35,10 @@ public class UserController {
         //"host":"192.168.1.225","port":7900,"serviceId":"ms-eureka-provider","metadata":{},"secure":false,"uri":"http://192.168.1.225:7900"}
         ServiceInstance localServiceInstance = this.discoveryClient.getLocalServiceInstance();
         return localServiceInstance;
+    }
+    @GetMapping("/eureka-provider/{id}")
+    public EurekaUser getSingleUser(@PathVariable Long id){
+        return this.userRepository.findOne(id);
+
     }
 }

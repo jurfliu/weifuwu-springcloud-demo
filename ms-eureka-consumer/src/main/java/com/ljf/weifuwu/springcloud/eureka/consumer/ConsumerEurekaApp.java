@@ -1,4 +1,4 @@
-package com.ljf.weifuwu.springcloud.eureka.provider;
+package com.ljf.weifuwu.springcloud.eureka.consumer;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -12,11 +12,14 @@ import org.springframework.web.client.RestTemplate;
  */
 @SpringBootApplication
 @EnableEurekaClient
-public class EurekaProviderApp
-{
+public class ConsumerEurekaApp
+{   @Bean
+public RestTemplate restTemplate() {
+    return new RestTemplate();
+}
     public static void main( String[] args )
     {
-        SpringApplication.run(EurekaProviderApp.class,args);
-        System.out.println( "eurka中的提供者启动成功!" );
+        SpringApplication.run(ConsumerEurekaApp.class, args);
+        System.out.println( "eureka-consumer启动起来了！！！" );
     }
 }
