@@ -2,7 +2,7 @@ server:
   port: 7900
 spring:
   application:
-      name: ms-test-provider
+    name: ms-test-provider
   jpa:
     generate-ddl: false
     show-sql: true

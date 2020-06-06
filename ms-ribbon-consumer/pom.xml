@@ -9,10 +9,10 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.ljf.weifuwu.springcloud.eureka.consumer</groupId>
-    <artifactId>ms-eureka-consumer</artifactId>
+    <groupId>com.ljf.weifuwu.springcloud.ribbon</groupId>
+    <artifactId>ms-ribbon-consumer</artifactId>
 
-    <name>ms-eureka-consumer</name>
+    <name>ms-ribbon-consumer</name>
     <!-- FIXME change it to the project's website -->
     <url>http://www.example.com</url>
 

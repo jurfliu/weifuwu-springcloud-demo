@@ -1,6 +1,8 @@
 server:
   port: 7900
 spring:
+  application:
+    name: ms-simple-provider
   jpa:
     generate-ddl: false
     show-sql: true

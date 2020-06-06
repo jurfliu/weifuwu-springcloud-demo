@@ -18,6 +18,7 @@ public class UserController {
 
     @GetMapping("/userconsumer/{id}")
     public User findById(@PathVariable Long id) {
-        return this.restTemplate.getForObject(this.userServicePath + id, User.class);
+        //return this.restTemplate.getForObject(this.userServicePath + id, User.class);
+        return this.restTemplate.getForObject("http://ms-simple-provider/simpleuser/" + id, User.class);
     }
 }

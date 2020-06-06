@@ -9,10 +9,10 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.ljf.weifuwu.springcloud.eureka.consumer</groupId>
-    <artifactId>ms-eureka-consumer</artifactId>
+    <groupId>com.ljf.weifuwu.springcloud.ribbon</groupId>
+    <artifactId>ms-ribbon-provider</artifactId>
 
-    <name>ms-eureka-consumer</name>
+    <name>ms-ribbon-provider</name>
     <!-- FIXME change it to the project's website -->
     <url>http://www.example.com</url>
 
@@ -39,10 +39,26 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
-        <!--  web-->
+        <!---jpa-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+        <!---web-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <!-- 持久化需要的包  -->
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 

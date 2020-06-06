@@ -38,6 +38,7 @@ public class UserController {
     }
     @GetMapping("/eureka-provider/{id}")
     public EurekaUser getSingleUser(@PathVariable Long id){
+        System.out.println("我是 eureka的提供者");
         return this.userRepository.findOne(id);
 
     }
