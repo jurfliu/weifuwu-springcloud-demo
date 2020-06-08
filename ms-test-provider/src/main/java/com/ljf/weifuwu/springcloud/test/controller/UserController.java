@@ -7,7 +7,7 @@ package com.ljf.weifuwu.springcloud.test.controller;
 import com.ljf.weifuwu.springcloud.test.model.Eurekauser;
 import com.ljf.weifuwu.springcloud.test.respository.EurekaUserRespository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cloud.client.loadbalancer.LoadBalanced;
+
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

@@ -7,6 +7,7 @@
     <file url="file://$PROJECT_DIR$/ms-eureka-provider" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ms-ribbon-consumer" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ms-ribbon-provider" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ms-ribbon-yml-consumer" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ms-simple-consumer" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ms-simple-provider" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ms-test-provider" charset="UTF-8" />
