@@ -9,9 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class UserController {
@@ -39,8 +37,18 @@ public class UserController {
     @GetMapping("/eureka-provider/{id}")
     public EurekaUser getSingleUser(@PathVariable Long id){
         ServiceInstance localServiceInstance = this.discoveryClient.getLocalServiceInstance();
-        System.out.println("我是 eureka的提供者");
+        System.out.println("我是 eureka的提供者"+localServiceInstance.getUri());
         return this.userRepository.findOne(id);
 
+    }
+
+    /***
+     * post请求
+     * @param user
+     * @return
+     */
+    @PostMapping("/eureka-user")
+    public EurekaUser getEurekaUserByPost(@RequestBody EurekaUser user){
+         return user;
     }
 }

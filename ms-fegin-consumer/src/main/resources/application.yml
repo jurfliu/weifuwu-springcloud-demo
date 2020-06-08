@@ -1,0 +1,18 @@
+server:
+  port: 8004
+spring:
+  application:
+    name: ms-fegin-consumer
+eureka:
+  client:
+    healthcheck:
+      enabled: true
+    serviceUrl:
+      defaultZone: http://ljf:123@localhost:8761/eureka
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${spring.cloud.client.ipAddress}:${spring.application.instance_id:${server.port}}
+#将feging中的超时熔断机制给关掉
+feign:
+  hystrix:
+    enabled: false

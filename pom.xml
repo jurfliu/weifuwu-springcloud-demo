@@ -18,6 +18,7 @@
     <module>ms-ribbon-provider</module>
     <module>ms-ribbon-consumer</module>
       <module>ms-ribbon-yml-consumer</module>
+      <module>ms-fegin-consumer</module>
   </modules>
 
   <!--spring-boot-starter-parent一定要引，否则子模块无法访问 -->

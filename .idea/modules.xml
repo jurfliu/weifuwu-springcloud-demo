@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/ms-eureka-center/ms-eureka-center.iml" filepath="$PROJECT_DIR$/ms-eureka-center/ms-eureka-center.iml" />
       <module fileurl="file://$PROJECT_DIR$/ms-eureka-consumer/ms-eureka-consumer.iml" filepath="$PROJECT_DIR$/ms-eureka-consumer/ms-eureka-consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/ms-eureka-provider/ms-eureka-provider.iml" filepath="$PROJECT_DIR$/ms-eureka-provider/ms-eureka-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ms-fegin-consumer/ms-fegin-consumer.iml" filepath="$PROJECT_DIR$/ms-fegin-consumer/ms-fegin-consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/ms-ribbon-consumer/ms-ribbon-consumer.iml" filepath="$PROJECT_DIR$/ms-ribbon-consumer/ms-ribbon-consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/ms-ribbon-provider/ms-ribbon-provider.iml" filepath="$PROJECT_DIR$/ms-ribbon-provider/ms-ribbon-provider.iml" />
       <module fileurl="file://$PROJECT_DIR$/ms-ribbon-yml-consumer/ms-ribbon-yml-consumer.iml" filepath="$PROJECT_DIR$/ms-ribbon-yml-consumer/ms-ribbon-yml-consumer.iml" />

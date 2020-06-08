@@ -9,6 +9,7 @@
         <module name="ms-eureka-center" />
         <module name="ms-eureka-consumer" />
         <module name="ms-eureka-provider" />
+        <module name="ms-fegin-consumer" />
         <module name="ms-ribbon-consumer" />
         <module name="ms-ribbon-provider" />
         <module name="ms-ribbon-yml-consumer" />
@@ -21,6 +22,7 @@
       <module name="ms-eureka-center" target="1.8" />
       <module name="ms-eureka-consumer" target="1.7" />
       <module name="ms-eureka-provider" target="1.7" />
+      <module name="ms-fegin-consumer" target="1.7" />
       <module name="ms-ribbon-consumer" target="1.7" />
       <module name="ms-ribbon-provider" target="1.7" />
       <module name="ms-ribbon-yml-consumer" target="1.7" />
