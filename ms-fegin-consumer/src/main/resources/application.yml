@@ -16,3 +16,6 @@ eureka:
 feign:
   hystrix:
     enabled: false
+logging:
+  level:
+     com.ljf.weifuwu.springcloud.fegin.service.UserFeginClientServvice: DEBUG
