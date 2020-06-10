@@ -8,5 +8,8 @@ public class Apple {
     public static Condition conA=lock.newCondition();
     public static Condition conB=lock.newCondition();
     public static Condition conC=lock.newCondition();
+    public static void main(String args[]){
+    System.out.println("helll");
+    }
 
 }

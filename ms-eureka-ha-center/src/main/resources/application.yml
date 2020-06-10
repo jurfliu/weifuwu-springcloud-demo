@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: ms-eureka-ha-center
+  profiles:
+    active: node1

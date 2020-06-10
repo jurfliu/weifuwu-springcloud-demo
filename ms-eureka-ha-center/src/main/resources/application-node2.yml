@@ -1,0 +1,8 @@
+server:
+  port: 2002
+eureka:
+  instance:
+    hostname: node2
+  client:
+    serviceUrl:
+      defaultZone: http://node1:2001/eureka/,http://node3:2003/eureka/
