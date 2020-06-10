@@ -1,24 +1,8 @@
 server:
-  port: 7901
+  port: 8005
 spring:
   application:
-    name: ms-eureka-provider
-  jpa:
-    generate-ddl: false
-    show-sql: true
-    hibernate:
-      ddl-auto: none
-  datasource:
-    platform: h2
-    schema: classpath:schema.sql
-    data: classpath:data.sql
-logging:
-  level:
-    root: INFO
-    org.hibernate: INFO
-    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
-    org.hibernate.type.descriptor.sql.BasicExtractor: TRACE
-    com.itmuch: DEBUG
+    name: ms-hystrix-consumer
 eureka:
   client:
     healthcheck:
@@ -29,8 +13,20 @@ eureka:
     prefer-ip-address: true
     instance-id: ${spring.application.name}:${spring.cloud.client.ipAddress}:${spring.application.instance_id:${server.port}}
     metadata-map:
-       business: Provide ms-e-p
+       business: Provide ms-fegin-client
        project-team: java-team
+#将feging中的超时熔断机制给关掉
+feign:
+  hystrix:
+    enabled: false
+#设置默认的服务超时时间为5s
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 5000
 #设置查看指标
 management:
   endpoint:
@@ -40,6 +36,6 @@ management:
     web:
       exposure:
         include:
-          "*"
+         "*"
         exclude:
           -
