@@ -6,7 +6,7 @@ import feign.Param;
 import feign.RequestLine;
 import org.springframework.cloud.netflix.feign.FeignClient;
 
-@FeignClient(name="ms-eureka-provider",configuration = HystrixUserConfig.class,fallback = HystrixFallBack.class)
+@FeignClient(name="ms-eureka-provider",configuration = HystrixUserConfig.class,fallbackFactory = HystrixFallBackFactory.class)
 public interface HystrixUserFegin {
     //和ms-eureka-provider模块中的路径要保持一致/eureka-provider/{id}
     //  @GetMapping("/eureka-provider/{id}")
