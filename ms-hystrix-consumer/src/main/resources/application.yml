@@ -18,7 +18,7 @@ eureka:
 #将feging中的超时熔断机制给关掉
 feign:
   hystrix:
-    enabled: false
+    enabled: true
 #设置默认的服务超时时间为5s
 hystrix:
   command:

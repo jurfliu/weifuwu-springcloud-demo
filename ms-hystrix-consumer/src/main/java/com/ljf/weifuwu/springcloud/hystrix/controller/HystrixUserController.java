@@ -18,7 +18,6 @@ public class HystrixUserController {
      * @return
      */
     @GetMapping("/hystrix-consumer/{id}")
-    @HystrixCommand(fallbackMethod = "queryUserByIdFallback")
     public HystrixUser queryInfoById(@PathVariable Long id) {
         System.out.println("hystrix的get请求!!!!!!!!!!1"+id);
         HystrixUser u= this.huf.getSingleUser(id);
@@ -26,16 +25,5 @@ public class HystrixUserController {
         return huf.getSingleUser(id);
     }
 
-    /**
-     * 超时异常处理
-     * @param id
-     * @return
-     */
-    public HystrixUser queryUserByIdFallback(@PathVariable Long id){
-        System.out.println("超时发生错误的.....使用hystrix进行处理");
-        HystrixUser u=new HystrixUser();
-        u.setId(00l);
-        u.setName("超时错误");
-        return u;
-    }
+
 }
