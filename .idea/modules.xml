@@ -8,12 +8,14 @@
       <module fileurl="file://$PROJECT_DIR$/ms-eureka-provider/ms-eureka-provider.iml" filepath="$PROJECT_DIR$/ms-eureka-provider/ms-eureka-provider.iml" />
       <module fileurl="file://$PROJECT_DIR$/ms-fegin-consumer/ms-fegin-consumer.iml" filepath="$PROJECT_DIR$/ms-fegin-consumer/ms-fegin-consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/ms-hystrix-consumer/ms-hystrix-consumer.iml" filepath="$PROJECT_DIR$/ms-hystrix-consumer/ms-hystrix-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ms-hystrix-dashboard/ms-hystrix-dashboard.iml" filepath="$PROJECT_DIR$/ms-hystrix-dashboard/ms-hystrix-dashboard.iml" />
       <module fileurl="file://$PROJECT_DIR$/ms-ribbon-consumer/ms-ribbon-consumer.iml" filepath="$PROJECT_DIR$/ms-ribbon-consumer/ms-ribbon-consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/ms-ribbon-provider/ms-ribbon-provider.iml" filepath="$PROJECT_DIR$/ms-ribbon-provider/ms-ribbon-provider.iml" />
       <module fileurl="file://$PROJECT_DIR$/ms-ribbon-yml-consumer/ms-ribbon-yml-consumer.iml" filepath="$PROJECT_DIR$/ms-ribbon-yml-consumer/ms-ribbon-yml-consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/ms-simple-consumer/ms-simple-consumer.iml" filepath="$PROJECT_DIR$/ms-simple-consumer/ms-simple-consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/ms-simple-provider/ms-simple-provider.iml" filepath="$PROJECT_DIR$/ms-simple-provider/ms-simple-provider.iml" />
       <module fileurl="file://$PROJECT_DIR$/ms-test-provider/ms-test-provider.iml" filepath="$PROJECT_DIR$/ms-test-provider/ms-test-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ms-turbine-consumer/ms-turbine-consumer.iml" filepath="$PROJECT_DIR$/ms-turbine-consumer/ms-turbine-consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/weifuwu-springcloud-demo.iml" filepath="$PROJECT_DIR$/weifuwu-springcloud-demo.iml" />
     </modules>
   </component>

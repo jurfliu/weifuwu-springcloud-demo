@@ -1,0 +1,15 @@
+server:
+  port: 8006
+spring:
+  application:
+    name: ms-hystrix-dashboard
+#设置查看指标
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+        exclude: "-"

@@ -13,8 +13,8 @@ eureka:
     service-url:
       defaultZone: http://ljf:123@localhost:8761/eureka
   #关闭自我保护模式，false关闭，true打开
-  server:
-      enableSelfPreservation: true
+  #server:
+   #   enableSelfPreservation: true
   #环境的说明
   environment: weifuwu
   datacenter: weifuwu-cloud
