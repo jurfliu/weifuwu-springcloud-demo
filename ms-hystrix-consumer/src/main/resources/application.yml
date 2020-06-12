@@ -1,5 +1,5 @@
 server:
-  port: 8005
+  port: 8004
 spring:
   application:
     name: ms-hystrix-consumer
@@ -15,6 +15,7 @@ eureka:
     metadata-map:
        business: Provide ms-fegin-client
        project-team: java-team
+       cluster: ljf-turbine
 #将feging中的超时熔断机制给关掉
 feign:
   hystrix:

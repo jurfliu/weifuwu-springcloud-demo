@@ -15,10 +15,10 @@ eureka:
 
 turbine:
   aggregator:
-    clusterConfig:  default
-  appConfig: ms-hystrix-consumer
-  clusterNameExpression: "'default'"
-
+    clusterConfig: ljf-turbine,ljf-feigin
+  app-config: ms-hystrix-consumer,ms-fegin-consumer
+  cluster-name-expression: metadata['cluster']
+  combine-host-port: true
 #设置查看指标
 management:
   endpoint:
