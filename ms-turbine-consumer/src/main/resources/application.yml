@@ -1,0 +1,31 @@
+server:
+  port: 8007
+spring:
+  application:
+    name: ms-turbine-consumer
+eureka:
+  client:
+    healthcheck:
+      enabled: true
+    serviceUrl:
+      defaultZone: http://ljf:123@localhost:8761/eureka
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${spring.cloud.client.ipAddress}:${spring.application.instance_id:${server.port}}
+
+turbine:
+  aggregator:
+    clusterConfig:  default
+  appConfig: ms-hystrix-consumer
+  clusterNameExpression: "'default'"
+
+#设置查看指标
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+        exclude: "-"
