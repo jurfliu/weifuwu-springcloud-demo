@@ -1,0 +1,41 @@
+server:
+  port: 8009
+spring:
+  application:
+    name: ms-zuul-fileupload
+  servlet:
+      multipart:
+        max-file-size: 500Mb      # Max file size，默认1M
+        max-request-size: 1000Mb   # Max request size，默认10M
+eureka:
+  client:
+    healthcheck:
+      enabled: true
+    serviceUrl:
+      defaultZone: http://ljf:123@localhost:8761/eureka
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${spring.cloud.client.ipAddress}:${spring.application.instance_id:${server.port}}
+
+turbine:
+  aggregator:
+    clusterConfig: ljf-turbine,ljf-feigin
+  app-config: ms-hystrix-consumer,ms-fegin-consumer
+  cluster-name-expression: metadata['cluster']
+  combine-host-port: true
+#设置查看指标
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+#第二种方式
+#zuul:
+ # routes:
+  #  user:
+   #   path: /user-zuul/**
+    #  serviceId: ms-eureka-provider

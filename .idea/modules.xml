@@ -16,6 +16,8 @@
       <module fileurl="file://$PROJECT_DIR$/ms-simple-provider/ms-simple-provider.iml" filepath="$PROJECT_DIR$/ms-simple-provider/ms-simple-provider.iml" />
       <module fileurl="file://$PROJECT_DIR$/ms-test-provider/ms-test-provider.iml" filepath="$PROJECT_DIR$/ms-test-provider/ms-test-provider.iml" />
       <module fileurl="file://$PROJECT_DIR$/ms-turbine-consumer/ms-turbine-consumer.iml" filepath="$PROJECT_DIR$/ms-turbine-consumer/ms-turbine-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ms-zuul-consumer/ms-zuul-consumer.iml" filepath="$PROJECT_DIR$/ms-zuul-consumer/ms-zuul-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ms-zuul-fileupload/ms-zuul-fileupload.iml" filepath="$PROJECT_DIR$/ms-zuul-fileupload/ms-zuul-fileupload.iml" />
       <module fileurl="file://$PROJECT_DIR$/weifuwu-springcloud-demo.iml" filepath="$PROJECT_DIR$/weifuwu-springcloud-demo.iml" />
     </modules>
   </component>

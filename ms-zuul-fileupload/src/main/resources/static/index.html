@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>zuul实现上传文件页面</title>
+</head>
+<body>
+<div style="width:800px;height:300px;border:1px solid red">
+    <span>
+         <!-- <form method="POST" enctype="multipart/form-data" action="/zuul-Upload"> -->
+        <form method="POST" enctype="multipart/form-data" action="http://localhost:8008/user-fileupload/zuul-Upload">
+         
+               <span style="width:100px;"> 请选择上传的文件</span>:<span style="width:300px;"><input type="file" name="zuulFile"></span>
+                  <span>提交： <input type="submit" value="Upload"></span>
+        </form>
+    </span>
+
+</div>
+</body>
+</html>

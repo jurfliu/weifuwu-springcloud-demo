@@ -23,6 +23,8 @@
       <module>ms-hystrix-consumer</module>
       <module>ms-hystrix-dashboard</module>
       <module>ms-turbine-consumer</module>
+      <module>ms-zuul-consumer</module>
+    <module>ms-zuul-fileupload</module>
   </modules>
 
   <!--spring-boot-starter-parent一定要引，否则子模块无法访问 -->
