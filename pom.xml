@@ -25,6 +25,7 @@
       <module>ms-turbine-consumer</module>
       <module>ms-zuul-consumer</module>
     <module>ms-zuul-fileupload</module>
+    <module>ms-config-server</module>
   </modules>
 
   <!--spring-boot-starter-parent一定要引，否则子模块无法访问 -->
@@ -57,7 +58,7 @@
       <dependency>
         <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-dependencies</artifactId>
-        <version>Camden.SR1</version>
+        <version>Camden.SR3</version> <!-- Camden.SR1  -->
         <type>pom</type>
         <scope>import</scope>
       </dependency>
