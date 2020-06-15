@@ -26,13 +26,14 @@
       <module>ms-zuul-consumer</module>
     <module>ms-zuul-fileupload</module>
     <module>ms-config-server</module>
+      <module>ms-config-client</module>
   </modules>
 
   <!--spring-boot-starter-parent一定要引，否则子模块无法访问 -->
   <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
-    <version>1.4.3.RELEASE</version>
+    <version>1.4.2.RELEASE</version>
   </parent>
   <name>weifuwu-springcloud-demo</name>
   <!-- FIXME change it to the project's website -->
@@ -40,8 +41,10 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>1.7</maven.compiler.source>
-    <maven.compiler.target>1.7</maven.compiler.target>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    <java.version>1.8</java.version>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
 
   <dependencies>
