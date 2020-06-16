@@ -10,9 +10,11 @@ public class ConfigClientController {
    private String profileType;
     @Value("${spring.application.name}")
     private String name;
+    @Value("${server.port}")
+    private String port;
       @GetMapping("/msconfig-client")
       private String getProfileType() {
-          System.out.println("ms-client获取的参数:"+profileType+" 远程name:"+name);
-            return this.profileType+" >>"+name;
+          System.out.println("ms-client获取的参数:"+profileType+" 远程name:"+name+" >>端口:"+port);
+            return this.profileType+" >>"+name+" 端口:"+port;
        }
 }
